@@ -17,6 +17,7 @@
     margin: auto;
 }
 
+/* First descendant selector here*/
 .main-menu ul{
     padding-inline-start: 5px;
 }
@@ -27,7 +28,8 @@
     font-size: 25px;
 }
 
-.main-menu ul li a{
+/* First child selector here*/
+.main-menu > ul > li > a{
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -35,6 +37,11 @@
 
 .main-menu ul li a:hover{
     background-color: azure;
+}
+
+/* Adjacent sibling selector here*/
+.main-menu li:first-of-type + li{
+    font-weight: 900;
 }
 
 .container-feed-main{
@@ -61,35 +68,35 @@
     border-radius: 20px;
 }
 
-.footer-container{
+.footer-container {
     margin-top: 10px;
     border-radius: 20px;
     background-color: rgb(225, 225, 225);
     height: 100px;
 }
 
-.footer-container{
+.footer-container {
     text-align: center;
 }
 
-.footer-container .footer-wrapper{
+.footer-container .footer-wrapper {
     padding: 30px;
 }
 
-footer{
+footer {
     width: 100%;
 }
 
-#footer-message{
+#footer-message {
     margin: 0;
 }
 
-.post-header{
+.post-header {
     padding: 15px;
     display: flex;
 }
 
-.post-header p{
+.post-header p {
     font-weight: 600;
     font-size: 25px;
     margin: 0;
@@ -119,6 +126,76 @@ footer{
 .post{
     background: rgb(206, 206, 206);
     border-radius: 20px;
+}
+
+.add-post-container{
+    padding: 0px;
+}
+
+.add-post-wrapper{
+    height: 580px;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: rgb(206, 206, 206);;
+}
+
+#add-post-body{
+    display: flex;
+    padding: 30px 100px;
+}
+
+#add-post-body h2{
+    width: 60px;
+    margin: 0px 10px 0px 0px;
+}
+
+/* Pseudo-element here */
+#add-post-body h2::first-letter{
+    text-transform: uppercase;
+}
+
+#post-text-input-form{
+    resize: none;
+    font-size: 15px;
+}
+
+#add-post-select-file{
+    display: flex;
+    padding: 0px 100px;
+    gap: 130px;
+    align-items: center;
+}
+
+#add-post-select-file h2{
+    width: 60px;
+}
+
+.choose-file-button{
+    height: 50px;
+    font-size: 25px;
+    width: 300px;
+    background: rgb(80, 80, 80);
+    color: white;
+}
+
+#add-post-submit{
+    text-align: center;
+    padding: 70px;
+}
+
+.submit-post-button{
+    height: 40px;
+    font-size: 23px;
+    width: 200px;
+    background: rgb(2, 78, 126);
+    color: white;
+}
+
+/* General sibling selector here */
+.post-description h2 ~ p {
+    text-decoration: solid;
+    color: rgb(45, 45, 45);;
 }
 
 
