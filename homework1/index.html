@@ -33,6 +33,14 @@
 
         <div class="container-feed-middle">
             <div class="post-wrapper">
+                <!--div v-for="item in posts" :key="item.id" class="post">
+                    <Post
+                    :id="item.id"
+                    :title="item.title"
+                    :date="item.date"
+                    :body="item.body"
+                    />
+                </div !-->
                 <div class="post">
                     <div class="post-header">
                         <img src="images\profiil.png" alt="Profiili pilt" width="40" height="40">
@@ -118,3 +126,32 @@
     </div>
 </footer>
 </html>
+
+<script>
+    import Post from ''
+
+    export default{
+        components: {
+            Post
+        },
+        data() {
+            return {
+                posts: [],
+            }
+        },
+        methods: {
+            fetchPosts() {
+                fetch('')
+                .then((response) => response.json())
+                .then((data) => {
+                    (this.posts = data)
+                    console.log(data)
+                })
+                .catch((err) => console.log(err.message))
+            }
+        },
+        mounted() {
+            this.fetchPosts()
+        }
+    }
+</script>
