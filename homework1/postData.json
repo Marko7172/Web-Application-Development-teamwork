@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 22, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 2,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 23, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 3,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 24, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 4,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 24, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 5,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 25, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 6,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 25, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 7,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 26, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 8,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 27, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 9,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 28, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    },
+    {
+        "id": 10,
+        "userProfilePicture": "/images/profiil.png",
+        "createTime": "Oct 29, 2022",
+        "postPicture": "images/skunk.jpg",
+        "postHeader": "Hello!",
+        "postContent": "Post content (description) "
+    }
+]
