@@ -18,8 +18,16 @@
             </div>
         </div>
         <div class="container-right">
-            <div class="profile-pic-wrapper">
-                <img src="images\profiil.png" alt="Profiili pilt" width="75" height="75">
+            <div class="dropdown">
+                <button>
+                    <img onclick="myfunction()" class="dropbtn" src="images\profiil.png" alt="Profiili pilt" 
+                    width="75" height="75">
+                </button>
+            <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1 <br> </a>
+                    <a href="#">Link 1 <br> </a>
+                    <a href="#">Link 1 <br> </a>
+                </div>
             </div>
         </div>
     </div>
@@ -128,30 +136,21 @@
 </html>
 
 <script>
-    import Post from ''
+    function myfunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-    export default{
-        components: {
-            Post
-        },
-        data() {
-            return {
-                posts: [],
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
             }
-        },
-        methods: {
-            fetchPosts() {
-                fetch('')
-                .then((response) => response.json())
-                .then((data) => {
-                    (this.posts = data)
-                    console.log(data)
-                })
-                .catch((err) => console.log(err.message))
-            }
-        },
-        mounted() {
-            this.fetchPosts()
         }
     }
+
 </script>
