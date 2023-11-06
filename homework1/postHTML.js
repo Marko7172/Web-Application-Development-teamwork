@@ -4,8 +4,9 @@ const result = fetchPosts();
 
 console.log(result)
 
+
 const largeHTMLContent = `
-    <div>
+    <div class="post">
         <h1>Welcome to my website</h1>
         <p>This is a large block of HTML content.</p>
         <!-- More HTML content here -->

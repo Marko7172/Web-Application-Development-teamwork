@@ -3,35 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Home</title>
 </head>
-<header>
-    <div class="container">
-        <div class="container-left">
-            <div class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>|</li>
-                    <li><a href="addPost.html">AddPost</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container-right">
-            <div class="dropdown">
-                <button>
-                    <img onclick="myfunction()" class="dropbtn" src="images\profiil.png" alt="Profiili pilt" 
-                    width="75" height="75">
-                </button>
-            <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1 <br> </a>
-                    <a href="#">Link 1 <br> </a>
-                    <a href="#">Link 1 <br> </a>
-                </div>
-            </div>
+ <header>
+    <nav>
+        <a href="index.html">Home</a>
+        <label>&nbsp;|&nbsp;</label>
+        <a href="addPost.html">Add Post</a>
+    </nav>
+    <div class="dropdown">
+        <img onclick="myfunction()" class="dropbtn" src="images\profiil.png" alt="Profiili pilt" 
+            width="75" height="75">
+        <div id="myDropdown" class="dropdown-content">
+            <label>John Doe <br></label>
+            <label>johndoe@ut.ee <br> </label>
+            <label> logout <br></label>
         </div>
     </div>
-</header>
+    </header>
 <body>
     <div class="container-feed-main">
         <div class="container-feed-left">

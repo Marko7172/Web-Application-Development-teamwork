@@ -5,11 +5,14 @@
     --pink: #e26e91;
     --grey: #718690;
     --red: #ed2525;
+    --llgreen: #c4ddc1;
+    --blue: #288ba3;
 }
 
 html {
     height: 100%;
-    color: var(--darkGreen);
+    
+    background-color: var(--llgreen);
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -34,10 +37,6 @@ header {
 header:first-child {
     padding-left: 20px;
     font-size: 20px;
-}
-
-header > img {
-    margin: 10px;
 }
 
 nav {
@@ -118,17 +117,25 @@ nav a:hover {
 
 .dropdown {
     position: relative;
+    margin: 30px;
     display: inline-block;
 }
 
 .dropdown-content {
+    text-align: center;
     display: none;
-    position: absolute;
+    position:fixed;
+    margin-left: -109px;
     background-color: #5b9d70;
-    min-width: 160px;
+    width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.dropdown-content label{
+    color: black;
 }
 
 .show {display: block;}
-
