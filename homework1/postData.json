@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "userProfilePicture": "/images/profiil.png",
+        "userProfilePicture": "",
         "createTime": "Oct 22, 2022",
         "postPicture": "images/skunk.jpg",
         "postHeader": "Hello!",

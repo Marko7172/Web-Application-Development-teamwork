@@ -1,4 +1,4 @@
-function fetchPosts() {
+export function fetchPosts() {
     fetch('https://mocki.io/v1/d5f8030d-7192-4bed-a089-7cbd8a27885f')
       .then(response => {
         if (!response.ok) {
@@ -13,5 +13,3 @@ function fetchPosts() {
         console.error('Error:', error);
       });
   }
-
-fetchPosts()
