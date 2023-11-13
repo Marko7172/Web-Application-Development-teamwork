@@ -23,13 +23,15 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: var(--darkGreen);
-    border-radius: 12px;
+    border-radius: 20px;
     align-items: center;
-    height: 20%;
-    margin: 10px;
+    height: 120px;
+    margin: 10px 10px 10px 10px;
+}
+
+header > *{
+    flex: 1 1 0;
 }
 
 header:first-child {
@@ -37,10 +39,34 @@ header:first-child {
     font-size: 20px;
 }
 
+/* Target second child*/
+header nav:nth-child(2) a{
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    color: var(--pink);
+    padding: 10px;
+
+}
+
+header nav:nth-child(2) a:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
+header nav:nth-child(2){
+    justify-content: center;
+}
+
+.dropbtn{
+    float: right;
+}
+
 nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+}
+
+nav label{
+    font-size: 40px;
 }
 
 nav a {
@@ -48,10 +74,12 @@ nav a {
     font-weight: bold;
     font-size: 25px;
     text-decoration: none;
+    padding: 10px;
 }
 
 nav a:hover {
     background-color: var(--red);
+    border-radius: 10px;
 }
 
 
@@ -97,6 +125,7 @@ nav a:hover {
     background-color: var(--darkGreen);
     width: 300px;
     border-radius: 20px;
+    margin-left: 10px;
 }
 
 .container-feed-middle{
@@ -109,6 +138,7 @@ nav a:hover {
     background-color: var(--darkGreen);
     width: 300px;
     border-radius: 20px;
+    margin-right: 10px;
 }
 
 .footer-container {
@@ -120,6 +150,8 @@ nav a:hover {
 
 .footer-container {
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer-container .footer-wrapper {
@@ -128,6 +160,13 @@ nav a:hover {
 
 footer {
     width: 100%;
+
+    /* Always display footer to the bottom of the page */
+    margin-top: auto;
+}
+
+.footer-wrapper p {
+    margin: 0;
 }
 
 #footer-message {
@@ -262,7 +301,6 @@ footer {
     text-align: center;
     padding: 20px;
     margin-bottom: 20%;
-
 }
 
 .dropdown {
@@ -275,13 +313,14 @@ footer {
     text-align: center;
     display: none;
     position:fixed;
-    margin-left: -109px;
     background-color: #5b9d70;
     width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
     line-height: 30px;
+    right: 40px;
+    top: 110px;
 }
 
 .dropdown-content label{
@@ -289,3 +328,55 @@ footer {
 }
 
 .show {display: block;}
+
+
+/* Sign up page css */
+
+.sign-up-container{
+    display: flex;
+    width: 250px;
+    height: 150px;
+    padding: 40px 60px 40px 30px;
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.registerForm{
+    height: 140px;
+}
+
+.resgisterWrapper{
+    margin: 50px auto 0px auto;;
+}
+
+.registerInputBox{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+.registerLabels{
+    display: grid;
+    height: 80px;
+    text-align: end;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+
+.registerLabels label:last-child{
+    margin: 10px 0 0 0;
+}
+
+.registerForm input:last-child{
+    background-color: var(--pink);
+    margin: 10px 40px 10px 5px;
+    padding: 10px 20px 10px 20px;
+    border: unset;
+    border-radius: 10px;
+}
+
+
+

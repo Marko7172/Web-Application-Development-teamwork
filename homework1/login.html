@@ -5,12 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="loginStyle.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Login page</title>
     </head>
     <body id="loginPage" class="body">
         <header>
             <nav>
                 <a href="index.html">Home</a>
+            </nav>
+            <nav>
+                <a href="login.html">Log in</a>
+                <a href="signUp.html">Sign up</a>
             </nav>
             <div class="dropdown">
                 <img onclick="myfunction()" class="dropbtn" src="images\profiil.png" alt="Profiili pilt" 
@@ -21,9 +26,9 @@
                     <label> logout <br></label>
                 </div>
             </div>
-            </header>
-        <div class="wrapper">
-            <div class="container">
+        </header>
+        <div class="wrapperLogin">
+            <div class="loginContainer">
                 <div class="loginContentBold">
                     <label>Welcome to PostIt</label>
                 </div>
@@ -48,6 +53,15 @@
             </div>
         </div>
     </body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <p>©Copyright 2023</p>
+                <p>All rights reserved</p>
+                <p>Powered by 2 amazing students</p>
+            </div>
+        </div>
+    </footer>
 </html>
 <script>
     function myfunction() {
