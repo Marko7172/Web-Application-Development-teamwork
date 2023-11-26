@@ -88,10 +88,6 @@ export default {
   font-size: x-large;
 }
 
-.registerForm #submit {
-  font-weight: bold;
-}
-
 
 .registerInputBox{
   margin: 5px;

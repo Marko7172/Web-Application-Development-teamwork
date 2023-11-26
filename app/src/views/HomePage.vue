@@ -19,7 +19,6 @@
         </div>
         <div class="container-feed-right"></div>
     </div>
-
 </template>
 
 <script>
@@ -43,40 +42,35 @@ export default {
 </script>
 
 <style scoped>
-.post-header {
-    padding: 15px;
+.container-feed-main {
     display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 
-.post-header p {
-    font-weight: 600;
-    font-size: 25px;
-    margin: 0;
-    text-align: center;
-    margin: auto 0 auto auto;
+.post-wrapper {
+    width: 70%;
 }
-
-.post-content{
+    
+.container-feed-left,
+.container-feed-right {
     width: 100%;
-    text-align: center;
+    background-color: #17562b;
+    margin: 0 10px;
+    border-radius: 12px;
 }
 
-.post-description{
-    padding: 40px;
-}
+/* Need peaks normi minema, kui postitused korda saavad */
 
-.post-description p{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.post-wrapper{
-    display: grid;
-    row-gap: 20px;
-}
-
-.post{
-    background: var(--lightgreen);
-    border-radius: 20px;
+#reset-button {
+    background-color: #e26e91;
+    color: black;
+    border-radius: 12px;
+    border: unset;
+    padding: 0.5rem;
+    font-size: x-large;
+    width: fit-content;
+    margin: 10px;
+    cursor: pointer;
 }
 </style>
