@@ -15,9 +15,10 @@
 </template>
 
 <style scoped>
+
 header {
     display: flex;
-    background-color: var(--darkGreen);
+    background-color: #17562b;
     border-radius: 20px;
     align-items: center;
     height: 120px;
@@ -37,7 +38,7 @@ header:first-child {
 header nav:nth-child(2) a{
     margin: 0 10px 0 10px;
     font-size: 20px;
-    color: var(--pink);
+    color: #e26e91;
     padding: 10px;
 
 }
@@ -50,4 +51,5 @@ header nav:nth-child(2) a:hover{
 header nav:nth-child(2){
     justify-content: center;
 }
+
 </style>

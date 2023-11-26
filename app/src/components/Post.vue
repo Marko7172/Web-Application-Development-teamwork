@@ -29,7 +29,7 @@ export default {
     methods: {
         increaseLikes() {
             this.$store.dispatch("increaseLikesAct", { id: this.id })
-        },
+        }
     }
 }
 </script>

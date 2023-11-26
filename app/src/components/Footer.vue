@@ -1,22 +1,21 @@
 <template>
-    <div>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-wrapper">
-                    <p>©Copyright 2023</p>
-                    <p>All rights reserved</p>
-                    <p>Powered by 2 amazing students</p>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <p>©Copyright 2023</p>
+                <p>All rights reserved</p>
+                <p>Powered by 2 amazing students</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+    
 </template>
 
 <style scoped>
 .footer-container {
     margin-top: 10px;
     border-radius: 20px;
-    background-color: var(--darkGreen);
+    background-color: #17562b;
     height: 100px;
 }
 

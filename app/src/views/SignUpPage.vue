@@ -2,16 +2,24 @@
   <div class="resgisterWrapper">
     <div class="sign-up-container">
       <div class="registerLabels">
-        <label>Email</label>
-        <label>Password</label>
+        <label> Welcome to PostIt </label>
+        <br>
+        <a> Create an account </a>
       </div>
-            
+      <br>      
       <form class="registerForm">
-        <input class="registerInputBox" type="Email" id="email" placeholder="Email" name="email" required>
+        <div class="inputThings">
+          <label>Email </label>
+          <input class="registerInputBox" type="Email" id="email" placeholder="Email" name="email" required>
+          <br>
+          <label>Password </label>
+          <input class="registerInputBox" type="Password" id="password" placeholder="Password" name="password" required>
+          <br>
+        </div>
         <br>
-        <input class="registerInputBox" type="Password" id="password" placeholder="Password" name="password" required>
-        <br>
-        <input @click="() => checkPassword" class="registerLoginButton" type="submit" id="submit" value="Sign up" />
+        <a id="submit" >
+          <input @click="() => checkPassword()"  type="submit" id="submit" value="Signup"/>
+        </a>      
       </form>
     </div>
   </div>
@@ -35,4 +43,90 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.resgisterWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sign-up-container{
+  height: wrap;
+  width: max-content;
+  background-color: #17562b;
+  border-radius: 12px;
+  margin: 10px;
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px;
+}
+
+.registerLabels a{
+  color:red;
+}
+
+.registerLabels label{
+  color:black;
+  font-weight: bold;
+}
+
+.inputThings {
+  text-align: right;
+}
+
+.registerForm{
+  margin-bottom: 10px;
+  width: 100%;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.registerForm label {
+  font-size: x-large;
+}
+
+.registerForm #submit {
+  font-weight: bold;
+}
+
+
+.registerInputBox{
+  margin: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  border-width: 0px;
+}
+
+
+.registerForm input:last-child{
+  background-color: #e26e91;
+  margin: 10px 40px 10px 5px;
+  padding: 10px 20px 10px 20px;
+  border: unset;
+  border-radius: 10px;
+}
+
+#submit{
+  background-color: #e26e91;
+  color:black;
+  border-radius: 12px;
+  border: unset;
+  padding: 0.5rem;
+  font-size: x-large;
+  width: fit-content;
+  margin: 10px;
+  cursor: pointer;
+  }
+
+.registerInputBox:invalid ~  a {
+  pointer-events: none;
+}
+
+.registerInputBox:valid ~  a {
+  pointer-events: fill;
+}
+</style>
 
