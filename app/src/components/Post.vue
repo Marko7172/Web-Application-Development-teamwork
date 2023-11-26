@@ -3,16 +3,14 @@
     <div class="post post1">
         <div class="post-content">
             <div class="post-header">
-            <img src="app\src\assets\profiil.png"
-                width="40px" 
-                height="40px"
-            />
+            <img id="profile-image" src="app\src\assets\profiil.png"/>
             <span>{{ createTime }}</span>
             </div>
             <h2>{{ postHeader }}</h2>
             <p>{{ postContent }}</p>
-            <img v-if="postPicture" :src="postPicture" />
-            <img @click="() => increaseLikes()" src="app\src\assets\like.png" height="auto" width="30px" />
+            <img id="post-image" v-if="postPicture" :src="postPicture" />
+            <img id="like-image" @click="() => increaseLikes()" src="app\src\assets\like.png"/>
+            <span>{{like}} likes</span>
         </div>
     </div>
 </template>
@@ -21,11 +19,18 @@
 export default {
     name: 'Post',
     props: {
+        id: Number,
         createTime: String,
         postHeader: String,
         postContent: String,
-        postPicture: String
+        postPicture: String,
+        like: Number
     },
+    methods: {
+        increaseLikes() {
+            this.$store.dispatch("increaseLikesAct", { id: this.id })
+        },
+    }
 }
 </script>
 
