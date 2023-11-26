@@ -1,20 +1,14 @@
 <template>
-    <div class="container-feed-main">
-        <div class="container-feed-left"></div>
-        <div class="container-feed-middle">
-            <div class="post-wrapper">
-                <div v-for="item in postList" :key="item.id" class="posts">
-                    <Post
-                        :userProfilePicture="item.userProfilePicture"
-                        :creatTime="item.creatTime"
-                        :postPicture="item.postPicture"
-                        :postHeader="item.postHeader"
-                        :postContent="item.postContent"
-                    />
-                </div>
-            </div>
+    <div>
+        <div>siin</div>
+        <div v-for="item in postList" :key="item.id" class="posts">
+            <Post 
+            :createTime="item.creatTime"
+            :postPicture="item.postPicture"
+            :postHeader="item.postHeader"
+            :postContent="item.postContent"
+            />
         </div>
-        <div class="container-feed-right"></div>
     </div>
 </template>
 
@@ -27,7 +21,7 @@ export default {
     },
     computed: {
         postList() {
-            console.log("Siin on")
+            console.log("siin")
             return this.$store.getters.getPosts
         }
     },

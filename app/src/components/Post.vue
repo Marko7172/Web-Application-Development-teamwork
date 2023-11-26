@@ -3,17 +3,16 @@
     <div class="post post1">
         <div class="post-content">
             <div class="post-header">
-                <img src="app\src\assets\profiil.png"
-                    width="40" 
-                    height="40"
-                />
-                <span>{{ creatTime }}</span>
+            <img src="app\src\assets\profiil.png"
+                width="40px" 
+                height="40px"
+            />
+            <span>{{ createTime }}</span>
             </div>
             <h2>{{ postHeader }}</h2>
             <p>{{ postContent }}</p>
             <img v-if="postPicture" :src="postPicture" />
-            <img @click="() => increaseLikes()" 
-src="group_r\src\assets\like.png" height="auto" width="30px" />
+            <img @click="() => increaseLikes()" src="app\src\assets\like.png" height="auto" width="30px" />
         </div>
     </div>
 </template>
@@ -24,8 +23,8 @@ export default {
     props: {
         createTime: String,
         postHeader: String,
-        postcontent: String,
-        picture: String
+        postContent: String,
+        postPicture: String
     },
 }
 </script>

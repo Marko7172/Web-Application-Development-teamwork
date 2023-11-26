@@ -3,7 +3,7 @@
         <nav>
             <div class="left">
                 <router-link to="/">Home</router-link> |
-                <router-link to="/addpost">Add Post</router-link>
+                <router-link to="/add">Add Post</router-link>
             </div>
             <div class="middle">
                 <router-link to="/login">Log in</router-link>
